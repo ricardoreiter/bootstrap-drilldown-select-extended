@@ -113,7 +113,7 @@
           }
         }
       }
-      if (!data) {
+      if (!data || !data.length) {
         defaults.onSelected(event);
         element.dropdown('toggle');
         isVisible = false;
